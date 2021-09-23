@@ -1,26 +1,15 @@
-/* By Athlon Front-End Team */
-
 /* Core variables */
 @import 'base/vars';
 
 /* CSS Reset */
 @import 'base/reset';
 
-/* CSS print */
-@import 'base/print';
+/* Card Component */
+@import 'base/card';
 
-/* Fonts */
-@import 'base/fonts';
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Mixins, helpers and functions */
-@import 'base/mixins';
-
-/* Vendor */
-
-/* Components */
-
-/* Browser specific styles */
-@import 'dirty/hacks';
-
-/* Demo Page styles */
-@import 'demo';
+body {
+    font-family: $my-font;
+}
