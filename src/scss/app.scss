@@ -4,12 +4,27 @@
 /* CSS Reset */
 @import 'base/reset';
 
-/* Card Component */
-@import 'base/card';
-
 /*font*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
     font-family: $my-font;
+    background-color: $bg-color;
 }
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $nav-color;
+    border-bottom: 2px solid $grey-color;
+    box-shadow: 0 3px $grey-shadow;
+    height: 4rem;
+    margin-bottom: 1rem;   
+
+    p{
+        color: $writing-color;
+        font-weight: bold;
+    }
+}
+
