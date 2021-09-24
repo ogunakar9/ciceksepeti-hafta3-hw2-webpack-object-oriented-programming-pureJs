@@ -8,5 +8,4 @@ class Dog extends Animal {
   }
 }
 
-// eslint-disable-next-line import/prefer-default-export
-export const dogArr = [];
+export default Dog;

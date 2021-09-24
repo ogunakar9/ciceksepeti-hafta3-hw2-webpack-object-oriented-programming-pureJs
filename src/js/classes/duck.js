@@ -8,5 +8,4 @@ class Duck extends Animal {
   }
 }
 
-// eslint-disable-next-line import/prefer-default-export
-export const duckArr = [{}];
+export default Duck;
