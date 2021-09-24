@@ -25,6 +25,7 @@ animalArr.push(new Duck("Snuggles", "../images/content/d8.jpg", 2, 3));
 
 const cardContainer = document.querySelector(".card-container");
 
+// create cards
 animalArr.forEach((animal) => {
   const card = document.createElement("div");
   card.innerHTML += `
