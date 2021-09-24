@@ -21,6 +21,8 @@ body {
   background-color: $bg-color;
 }
 
+//header & footer related
+
 header {
   @include default-header-footer;
   border-bottom: 2px solid $grey-color;
@@ -52,6 +54,8 @@ footer {
     }
   }
 }
+
+//card content
 
 main {
   display: flex;
