@@ -7,24 +7,38 @@
 /*font*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@mixin default-header-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $nav-color;
+    height: 4rem;
+}
+
 body {
     font-family: $my-font;
     background-color: $bg-color;
 }
 
-header, footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $nav-color;
+header {
+    @include default-header-footer;
     border-bottom: 2px solid $grey-color;
     box-shadow: 0 3px $grey-shadow;
-    height: 4rem;
+    
     margin-bottom: 1rem;   
 
     p{
-        color: $writing-color;
+        // color: $grey-color;
         font-weight: bold;
+        // border: 1px solid $green-color;
+        // border-radius: 0.5rem;
+        // padding: 1rem;
     }
+}
+
+footer {
+    @include default-header-footer;
+    border-top: 2px solid $grey-color;
+    margin-top: 1rem;   
 }
 
