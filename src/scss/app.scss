@@ -40,12 +40,15 @@ footer {
   @include default-header-footer;
   border-top: 2px solid $grey-color;
   margin-top: 1rem;
-
+  padding: 1rem;
   .footer-container {
     width: 70%;
     p {
       font-weight: lighter;
       text-align: center;
+      @media (max-width: 800px) {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -57,8 +60,16 @@ main {
   padding-left: 1rem;
   padding-right: 1rem;
 
+  @media (max-width: 350px) {
+    padding: 0;
+  }
   .card-size-fixer {
     width: 90%;
+    @media (max-width: 350px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 
