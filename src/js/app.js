@@ -29,13 +29,19 @@ const cardContainer = document.querySelector(".card-container");
 animalArr.forEach((animal) => {
   const card = document.createElement("div");
   card.innerHTML += `
-    <div>
-      <img src=${animal.image} alt="animal-image"/>
-    </div>
-    <div>
-      <p>${animal.name}</p>
-      <p>${animal.age}</p>
-      <p>${animal.numberOfLegs}</p>
+    <div class="card">
+        <div class="card-image">
+            <img src=${animal.image} alt="animal-image"/>
+        </div>
+        <div class="card-text">
+            <div class="card-text-name">
+                <p>Hi I'm ${animal.name}</p>
+            </div>
+            <div class="card-text-nums">
+                <p>I'm ${animal.age} years old</p>
+                <p>I have ${animal.numberOfLegs} legs</p>
+            </div>
+        </div>
     </div>
     `;
   cardContainer.appendChild(card);
